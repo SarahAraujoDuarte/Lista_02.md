@@ -42,14 +42,6 @@ console.log("O produto dos valores é:", produto);
 Qual das seguintes alternativas melhor descreve o que o código faz?
 
 A) O código avalia a expressão booleana, imprime `true`, calcula o produto dos números na lista e imprime o resultado no console.
-
-B) O código avalia a expressão booleana, imprime `false`, calcula o produto dos números na lista e imprime o resultado no console.
-
-C) O código avalia a expressão booleana, imprime `true` e, em seguida, verifica se o número 6 está na lista.
-
-D) O código avalia a expressão booleana, imprime `false` e ordena os valores em ordem crescente.
-
-
 ______
 
 **2)** O código a seguir contém duas funções que calculam o limite de crédito de um cliente com base nos seus gastos e na renda mensal.
@@ -104,12 +96,6 @@ function analisarCredito2() {
 Se ambas as funções forem executadas com os valores fornecidos, qual será a saída exibida no console?
 
 A) Ambas as funções exibirão: 'Seu crédito foi aprovado. Saldo disponível: 400.'
-
-B) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -600.', enquanto analisarCredito2() exibirá: 'Seu crédito foi negado. Saldo disponível: -200.'
-
-C) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -200.', enquanto analisarCredito2() exibirá: 'Seu crédito foi aprovado. Saldo disponível: 100.'
-
-D) Ambas as funções exibirão: 'Seu crédito foi aprovado Saldo disponível: 500.'
 ______
 
 **3)** Considere o seguinte trecho de código em JavaScript:
@@ -127,13 +113,7 @@ if (idade >= 18 && idade < 60) {
 ```
 Qual das seguintes alternativas melhor descreve o comportamento do código?
 
-A) O código verifica se a idade indica um adulto ou um idoso e exibe a mensagem correspondente.
-
 B) O código verifica se a idade pertence à faixa adulta. Se for, exibe "Você é um adulto!". Caso contrário, verifica se é menor de idade e exibe "Você é menor de idade!". Se nenhuma das condições anteriores for verdadeira, exibe "Você está na melhor idade!".
-
-C) O código verifica se a idade está entre 18 e 60 anos e, se for, imprime "Você é um adulto!". Se não estiver nesse intervalo, imprime "Você está na melhor idade!".
-
-D) O código verifica se a idade é menor de 18, entre 18 e 60 ou acima de 60, imprimindo uma mensagem específica para cada caso.
 ______
 
 **4)** Qual será o resultado impresso no console após a execução do seguinte código?
@@ -161,37 +141,6 @@ for (var i = 0; i < consumoDispositivos.length; i++) {
 
 Escolha a opção que responde corretamente:
 
-A)
-Dispositivo 1 ligado. Energia restante: 900
-
-Dispositivo 2 ligado com bateria extra. Energia restante: 700
-
-Dispositivo 3 ligado. Energia restante: 200
-
-Dispositivo 4 ligado com bateria extra. Energia restante: 0
-
-Dispositivo 5 ligado. Energia restante: -200
-
-B)
-Dispositivo 1 ligado. Energia restante: 900
-
-Dispositivo 2 ligado com bateria extra. Energia restante: 700
-
-Dispositivo 3 ligado. Energia restante: 200
-
-Dispositivo 4 não pode ser ligado. Energia insuficiente.
-
-Dispositivo 5 não pode ser ligado. Energia insuficiente.
-
-C)
-Dispositivo 1 ligado. Energia restante: 900
-
-Dispositivo 2 ligado com bateria extra. Energia restante: 700
-
-Dispositivo 3 ligado. Energia restante: 400
-
-Dispositivo 4 não pode ser ligado. Energia insuficiente.
-
 D)
 Dispositivo 1 ligado. Energia restante: 900
 
@@ -209,13 +158,7 @@ ______
 
 Escolha a opção que melhor descreve seu propósito:
 
-A) O método update() é responsável por carregar os assets do jogo antes da cena ser exibida.
-
 B) O método update() é chamado continuamente a cada quadro (frame) do jogo, sendo usado para atualizar a lógica, movimentação e interações dos objetos na cena.
-
-C) O método update() renderiza todos os sprites na tela e garante que a física do jogo seja processada corretamente.
-
-D) O método update() é chamado apenas uma vez após a criação da cena, sendo utilizado para configurar variáveis iniciais do jogo.
 ______
 
 **6)** Qual é o principal objetivo do módulo Matter.js Physics em Phaser.js?
@@ -223,12 +166,6 @@ ______
 Escolha a opção que responde corretamente:
 
 A) Simular física avançada, incluindo corpos rígidos, colisões complexas e interação entre objetos com gravidade e forças.
-
-B) Gerenciar eventos de entrada do usuário, como cliques e toques na tela, permitindo movimentação de personagens.
-
-C) Renderizar gráficos otimizados para jogos 2D e garantir uma taxa de quadros estável.
-
-D) Criar animações automáticas para sprites e objetos interativos sem necessidade de programação de movimentação.
 
 ______
 
@@ -245,6 +182,20 @@ Pedidos entre R$50,00 e R$199,99 (inclusive) → "Frete com custo adicional!"
 Pedidos de R$200,00 ou mais → "Frete grátis!"
 ```
 Implemente um pseudocódigo que receba o valor total da compra e exiba a classificação correta do frete para o cliente.
+
+
+```javascript
+
+const valorCompra = 200; //Constante que define o valorCompra sendo 200
+
+if (valorCompra < 50) {
+  console.log("Frete não disponível!");  //Primeira condição que informa que se o valor for menor que 50 o frete não vai estar disponivel 
+} else if (valorCompra >= 50 && valorCompra <= 199.99) {
+  console.log("Frete com custo adicional!"); //Segunda condição que informa que se o valor for maior ou igual a 50 e menor ou igual a 199.99 o frete possui um custo adicional 
+} else {
+  console.log("Frete grátis!"); //Terceira condição que informa que se não estiver dentro das condições acima, o frete será grátis
+}
+```
 ______
 
 **8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
@@ -259,6 +210,29 @@ Método Construtor(modelo, ano):
 
 Define os valores dos atributos modelo e ano com os valores passados como parâmetro.
 Método CalcularConsumo():
+
+----------------------------
+Classe Carro herda Veiculo:
+    Atributos:
+        kmPorLitro  // Quilômetros percorridos por litro de combustível
+
+    Método Construtor(modelo, ano, kmPorLitro):
+        Chamar Construtor da classe Veiculo(modelo, ano)
+        this.kmPorLitro ← kmPorLitro
+
+    Método CalcularConsumo(quilometragem):
+        Retornar (quilometragem / kmPorLitro)  // Metodo que retorna os litros gastos
+
+Classe Moto herda Veiculo:
+    Atributos:
+        kmPorLitro  // Quilômetros percorridos por litro de combustível
+
+    Método Construtor(modelo, ano, kmPorLitro):
+        Chamar Construtor da classe Veiculo(modelo, ano)
+        this.kmPorLitro ← kmPorLitro
+
+    Método CalcularConsumo(quilometragem):
+        Retornar (quilometragem / kmPorLitro)  // Retorna litros gastos
 ```
 Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subclasses.
 Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
@@ -272,7 +246,40 @@ Implemente a lógica dessa simulação em pseudocódigo, considerando a seguinte
 
 Considere a fórumla de atualização velocidade:
 ```
-    velocidade = velocidadeInicial - desaceleracao * tempo
+   algoritmo SimulacaoPousoMarte
+
+// Definição das variáveis
+entrada velocidadeInicial, desaceleracao, velocidadeSegura, tempoMaximo
+
+tempo <- 0
+velocidade <- velocidadeInicial
+
+// Verifica se os parâmetros são válidos
+se desaceleracao <= 0 entao
+    exibir "Erro: A desaceleração deve ser positiva."
+    sair
+fim
+
+se velocidadeInicial <= velocidadeSegura entao
+    exibir "Erro: A velocidade inicial já é segura."
+    sair
+fim
+
+// Loop para calcular o tempo necessário
+enquanto velocidade > velocidadeSegura e tempo < tempoMaximo faca
+    tempo <- tempo + 1
+    velocidade <- velocidadeInicial - desaceleracao * tempo
+fimenquanto
+
+// Verifica se atingiu a velocidade segura dentro do tempo limite
+se velocidade <= velocidadeSegura entao
+    exibir "Tempo necessário para pouso seguro: ", tempo, " segundos."
+senao
+    exibir "Aviso: Não foi possível atingir a velocidade segura dentro do tempo máximo permitido."
+fim
+
+fimalgoritmo
+
 ```
 Seu programa deve determinar quanto tempo será necessário para que a sonda atinja uma velocidade segura de pouso, sem ultrapassar os limites estabelecidos.
 ______
@@ -307,3 +314,46 @@ Escrever("Total de investimentos acumulados:")
 ImprimirMatriz(totalInvestimentos)  
 ```
 Agora, implemente a função MultiplicarMatrizesInvestimento(matrizA, matrizB), que multiplica as duas matrizes, simulando o efeito de diferentes fatores de crescimento e impacto financeiro nos investimentos ao longo do tempo.
+
+```
+function MultiplicarMatrizesInvestimento(matrizA, matrizB) {
+    // Verifica se a multiplicação é possível (colunas de A == linhas de B)
+    if (matrizA[0].length !== matrizB.length) {
+        return "As matrizes não podem ser multiplicadas. O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda matriz.";
+    }
+    
+    let linhasA = matrizA.length;
+    let colunasA = matrizA[0].length;
+    let colunasB = matrizB[0].length;
+    
+    // Inicializa a matriz resultado com zeros
+    let matrizResultado = Array.from({ length: linhasA }, () => Array(colunasB).fill(0));
+    
+    // Multiplicação de matrizes
+    for (let i = 0; i < linhasA; i++) {
+        for (let j = 0; j < colunasB; j++) {
+            for (let k = 0; k < colunasA; k++) {
+                matrizResultado[i][j] += matrizA[i][k] * matrizB[k][j];
+            }
+        }
+    }
+    
+    return matrizResultado;
+}
+
+// Exemplo de uso
+let investimentosAno1 = [
+    [1000, 2000],
+    [1500, 2500]
+];
+
+let fatoresCrescimento = [
+    [1.1, 0.9],
+    [0.8, 1.2]
+];
+
+let resultado = MultiplicarMatrizesInvestimento(investimentosAno1, fatoresCrescimento);
+console.log("Resultado da multiplicação das matrizes:");
+console.table(resultado);
+
+```
